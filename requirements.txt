@@ -1,0 +1,11 @@
+fastapi==0.139.2
+uvicorn==0.50.0
+pydantic==2.13.4
+sqlalchemy==2.0.51
+requests==2.34.2
+httpx==0.28.1
+httpx-sse==0.4.3
+sse-starlette==3.4.5
+cozepy==0.20.0
+pygame-ce==2.5.7
+python-multipart==0.0.32

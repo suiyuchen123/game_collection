@@ -21,6 +21,17 @@ class CozeClient:
         self.lock = threading.Lock()
 
     def load_config(self, config_path=None):
+        env_api_key = os.environ.get("COZE_API_KEY")
+        env_bot_id = os.environ.get("COZE_BOT_ID")
+        
+        if env_api_key:
+            self.api_key = env_api_key
+        if env_bot_id:
+            self.bot_id = env_bot_id
+            
+        if self.api_key and self.bot_id:
+            return True
+
         if config_path is None:
             config_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "coze_config.json")
 

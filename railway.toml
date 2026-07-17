@@ -1,0 +1,7 @@
+[settings]
+PYTHON_VERSION = "3.12"
+PORT = 8000
+
+[env]
+COZE_API_KEY = ""
+COZE_BOT_ID = ""
